@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Scam Message Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Scam Detector</h1>
+        <p class="subtitle">Enter your message below to check for potential scams.</p>
+        
+        <div class="input-area">
+            <textarea id="messageInput" placeholder="Paste your message here..."></textarea>
+            <button id="detectBtn">Check Message</button>
+        </div>
+
+        <div id="result" class="result-box hidden">
+            <div id="resultIcon"></div>
+            <h2 id="resultTitle"></h2>
+            <p id="resultDetails"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
